@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/creatTitle.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="create__dish">
+    <form id="data" method="post" enctype="multipart/form-data">
+    <div class="title__dish">
+        <input type="text" required>
+        <label>Title</label>
+    </div>
+    <p>Description</p>
+    <textarea class="dish__description"></textarea>
+    <div class="dish__button">
+        <button class="create__dish__button">Create</button>
+    </div>
+        <input type="file" name="image" accept="image/png,image/jpeg"/>
+    </form>
+</div>
+<div class="create__dish">
+    <form method="post" enctype="multipart/form-data">
+    <div class="title__dish">
+        <input type="text" required>
+        <label>Title</label>
+    </div>
+    <p>Description</p>
+    <textarea class="dish__description"></textarea>
+    <div class="dish__button">
+    <button class="create__dish__button">Create</button>
+    <button class="create__dish__button">Remove</button>
+    </div>
+        <input type="file" name="image" accept="image/png,image/jpeg"/>
+    </form>
+</div>
+
+<div class="dish__button save">
+    <button id="step" class="create__dish__button">Add Step</button>
+    <button class="create__dish__button">Save</button>
+</div>
+<script src="dima.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import "vars";
+@import "mixins";
+@import "components/base";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.centred {
+    text-align: center;
+
+}
+
+.header {
+    padding: 0.5em 0;
+
+}
+
+.main {
+    background-color: @blueLight;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.button {
+    padding: 1em;
+    cursor: pointer;
+    outline: 0;
+    color: @white;
+    .border;
+    transition: 0.5s;
+    background-size: 150% auto;
+}
+
+.button:hover {
+
+}
+
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    padding: 1em;
+  }
+  .login__form h2 {
+    padding: 0.2em;
+  }
+  .login__form label {
+    padding-top: 0.2em;
+    font-weight: 700;
+  }
+  .login__form a {
+    padding-top: 0.2em;
+    font-weight: 700;
+    color: #333333;
+  }
+  .login__form a:hover {
+    color: #574494;
+  }
+
+  .login__form input[type='text'] {
+    margin: 0.2em;
+    padding: 1em;
+    outline: 0;
+    .border;
+  }
+
+  .login__form input[type='password'] {
+    margin: 0.2em;
+    padding: 1em;
+    outline: 0;
+    .border;
+  }
+  
+  .cancel__button {
+    background-color: #e60039;
+  }
+  .cancel__button:hover {
+    background-color: #C1002A;
+  }
+  .message {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+  }
+  
